@@ -1,0 +1,48 @@
+from PPlay.gameimage import *
+from PPlay.sprite import *
+from PPlay.window import *
+
+# Inicializaçôes
+janela = Window(1200, 700)
+teclado = Window.get_keyboard()
+fundo = GameImage("fundo_japao.jpg")
+platataforma1 = Sprite("plataforma1.png", 1)
+platataforma2 = Sprite("plataforma2.png", 1)
+platataforma3 = Sprite("plataforma3.png", 1)
+boneco = Sprite("boneco.png", 1)
+  # Pedras
+pedra1 = Sprite("pedra.png", 1)
+pedra2 = Sprite("pedra.png", 1)
+pedra3 = Sprite("pedra.png", 1)
+pedra4 = Sprite("pedra.png", 1)
+
+
+# Posições
+platataforma1.set_position(800, janela.height - 30)
+platataforma2.set_position(0, janela.height - 30)
+platataforma3.set_position((janela.width - platataforma3.width)/2, 570)
+boneco.set_position(25, janela.height - boneco.height - 30)
+  # Pedras
+pedra1.set_position(190,janela.height - pedra1.height - 30)
+pedra2.set_position(janela.width/2,570 - pedra2.height)
+pedra3.set_position(900,janela.height - pedra3.height - 30)
+pedra4.set_position(1100,janela.height - pedra4.height - 30)
+
+janela.set_title("Oath of Vengeance")
+
+# Game Loop
+while True:
+
+    if teclado.key_pressed("ESC"):
+        janela.close()
+
+    fundo.draw()
+    platataforma1.draw()
+    platataforma2.draw()
+    platataforma3.draw()
+    boneco.draw()
+    pedra1.draw()
+    pedra2.draw()
+    pedra3.draw()
+    pedra4.draw()
+    janela.update()
