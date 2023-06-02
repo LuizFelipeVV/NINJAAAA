@@ -46,3 +46,5 @@ while True:
     pedra3.draw()
     pedra4.draw()
     janela.update()
+    
+    #cu
