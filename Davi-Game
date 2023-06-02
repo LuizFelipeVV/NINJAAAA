@@ -10,7 +10,7 @@ platataforma1 = Sprite("plataforma1.png", 1)
 platataforma2 = Sprite("plataforma2.png", 1)
 platataforma3 = Sprite("plataforma3.png", 1)
 boneco = Sprite("boneco.png", 1)
-  # Pedras
+# Pedras
 pedra1 = Sprite("pedra.png", 1)
 pedra2 = Sprite("pedra.png", 1)
 pedra3 = Sprite("pedra.png", 1)
@@ -21,8 +21,8 @@ pedra4 = Sprite("pedra.png", 1)
 platataforma1.set_position(800, janela.height - 30)
 platataforma2.set_position(0, janela.height - 30)
 platataforma3.set_position((janela.width - platataforma3.width)/2, 570)
-boneco.set_position(25, janela.height - boneco.height - 30)
-  # Pedras
+boneco.set_position(0, janela.height - boneco.height - 5)
+# Pedras
 pedra1.set_position(190,janela.height - pedra1.height - 30)
 pedra2.set_position(janela.width/2,570 - pedra2.height)
 pedra3.set_position(900,janela.height - pedra3.height - 30)
